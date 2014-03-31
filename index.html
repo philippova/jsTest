@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>test</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="test.css"/>
+    <script type="text/javascript" src="vars.js"></script>
+    <script type="text/javascript" src="test.js"></script>
+
+</head>
+<body onload="loadPanel(0,this.document.getElementById('selected'))">
+<div id="panel" ondrop="drop(event)" ondragover="allowDrop(event)">
+</div>
+<div id="tabs">
+<div id="header">
+    <ul>
+        <li onclick="loadPanel(0,this);" id="selected"><a href="#">Поле для виджетов</a></li>
+    </ul>
+</div>
+<div id="content" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+</div>
+<div id="panel_bottom"></div>
+</body>
+</html>
